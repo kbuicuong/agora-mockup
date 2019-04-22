@@ -12,6 +12,7 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-color: grey;
   padding: 0 10rem;
   line-height: 1;
   font-family: "Open Sans", sans-serif; }
@@ -36,7 +37,7 @@ ul {
 
 .headline {
   background-image: url("/images/HeadlineImage_1.jpg");
-  height: 40rem;
+  height: 70vh;
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;
@@ -45,7 +46,8 @@ ul {
   line-height: 1.5; }
   .headline--small {
     color: #fff;
-    font-size: 4.5rem; }
+    font-size: 4.5rem;
+    text-transform: uppercase; }
     .headline--small:first-child {
       margin-top: 2rem; }
   .headline--large {
@@ -53,4 +55,37 @@ ul {
     font-size: 7rem;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
     background-size: 100%;
-    display: block; }
+    display: block;
+    text-transform: uppercase; }
+
+.secret {
+  background-color: #fff; }
+  .secret__headline {
+    margin-left: 10rem;
+    padding: 4rem 0;
+    font-size: 2rem; }
+  .secret__banner {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #c39b7c);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+    justify-content: center;
+    grid-column-gap: 2rem; }
+    .secret__banner__item--text {
+      text-align: center;
+      font-size: 2.6rem;
+      padding: 3rem 0; }
+  .secret__description {
+    padding: 4rem 0;
+    margin-left: 10rem; }
+    .secret__description__text {
+      margin: 4rem 0;
+      font-size: 2rem; }
+      .secret__description__text:last-child {
+        margin: 2rem 0; }
+    .secret__description__list {
+      font-size: 1.5rem; }
+      .secret__description__list__item {
+        margin: 1.5rem 0;
+        display: flex; }
+        .secret__description__list__item p {
+          margin-left: 1rem; }
