@@ -1,0 +1,18 @@
+%heading{
+    font-family: $font-primary;
+    font-weight: 700;
+}
+
+.heading-1{
+    @extend %heading;
+    font-size: 4.5rem;
+    line-height: 1;
+}
+
+.mt-sm{
+    margin-top: 2rem;
+}
+
+.mb-sm{
+    margin-bottom: 2rem;
+}
