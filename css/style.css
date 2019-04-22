@@ -29,6 +29,9 @@ ul {
   font-size: 4.5rem;
   line-height: 1; }
 
+.italic {
+  font-style: italic; }
+
 .mt-sm {
   margin-top: 2rem; }
 
@@ -110,3 +113,24 @@ ul {
     color: #fff;
     font-size: 2.5rem;
     padding-left: 5rem; }
+
+.doctor {
+  padding-top: 3rem;
+  background-color: #fff; }
+  .doctor__banner {
+    display: flex;
+    align-items: center;
+    background-color: #3d1c0f;
+    width: 80%; }
+    .doctor__banner__text {
+      color: #fff;
+      font-size: 2rem; }
+    .doctor__banner__image {
+      height: 40rem;
+      width: 40rem; }
+  .doctor__texts {
+    margin-left: 10rem;
+    padding-bottom: 4rem; }
+    .doctor__texts__text {
+      margin: 4rem 0;
+      font-size: 2rem; }
