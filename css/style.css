@@ -35,6 +35,9 @@ ul {
 .mb-sm {
   margin-bottom: 2rem; }
 
+.mb-md {
+  margin-bottom: 4rem; }
+
 .headline {
   background-image: url("/images/HeadlineImage_1.jpg");
   height: 70vh;
@@ -73,7 +76,8 @@ ul {
     .secret__banner__item--text {
       text-align: center;
       font-size: 2.6rem;
-      padding: 3rem 0; }
+      padding: 3rem 0;
+      color: #3d1c0f; }
   .secret__description {
     padding: 4rem 0;
     margin-left: 10rem; }
@@ -89,3 +93,20 @@ ul {
         display: flex; }
         .secret__description__list__item p {
           margin-left: 1rem; }
+
+.parallax {
+  background-image: url("/images/ParallaxOne_5.jpg");
+  min-height: 300px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .parallax__heading {
+    color: #fff;
+    font-size: 5rem;
+    padding-left: 5rem;
+    padding-right: 15rem; }
+  .parallax__sub {
+    color: #fff;
+    font-size: 2.5rem;
+    padding-left: 5rem; }
