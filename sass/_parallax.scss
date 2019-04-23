@@ -5,6 +5,12 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-repeat: no-repeat;
+
+    @media only screen and (max-width: $bp-medium){
+        //background-size: contain;
+        min-height: 200px;
+    }
 
     &__heading{
         color: #fff;
@@ -12,11 +18,34 @@
         padding-left: 5rem;
         padding-right: 15rem;
         
+        @media only screen and (max-width: $bp-medium){
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 2.5rem;
+            padding-right: 10rem;
+        }
+
+        @media only screen and (max-width: $bp-tiny){
+            padding-right: 5rem;
+        }
     }
 
     &__sub{
         color: #fff;
         font-size: 2.5rem;
         padding-left: 5rem;
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-small){
+            font-size: 1.5rem;
+        }
+
+        @media only screen and (max-width: $bp-tiny){
+        }
     }
 }

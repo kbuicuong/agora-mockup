@@ -9,15 +9,32 @@
     &__header{
         font-size: 4rem;
         color: #FFCD2F;
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 3rem;
+        }
     }
 
     &__texts{
         margin: 0 15rem;
+
+        @media only screen and (max-width: $bp-medium){
+            margin: 0 10rem;
+        }
+
+        @media only screen and (max-width: $bp-tiny){
+            margin: 0 7rem;
+        }
     }
 
     &__text{
         font-size: 2rem;
         color: #fff;
+
+        @media only screen and (max-width: $bp-medium){
+            font-size: 1.5rem;
+        }
+
         &:not(:last-child){
             margin-bottom: 2rem;
         }

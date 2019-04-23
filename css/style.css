@@ -10,12 +10,18 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%; }
+  @media only screen and (max-width: 68.75em) {
+    html {
+      font-size: 50%; } }
 
 body {
   background-color: grey;
   padding: 0 10rem;
   line-height: 1;
   font-family: "Open Sans", sans-serif; }
+  @media only screen and (max-width: 37.5em) {
+    body {
+      padding: 0; } }
 
 ol,
 ul {
@@ -66,8 +72,13 @@ ul {
   font-size: 5rem;
   border: 5px solid #fff;
   font-weight: 700;
-  line-height: .5;
-  cursor: pointer; }
+  line-height: .5; }
+  @media only screen and (max-width: 37.5em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 3.5rem; } }
 
 .headline {
   background-image: url("/images/HeadlineImage_1.jpg");
@@ -84,14 +95,25 @@ ul {
     text-transform: uppercase; }
     .headline--small:first-child {
       margin-top: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .headline--small {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .headline--small {
+        font-size: 2.5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .headline--small {
+        font-size: 2rem; } }
   .headline--large {
     color: red;
     font-size: 7rem;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white);
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), white, rgba(255, 255, 255, 0));
     background-size: 100%;
     display: block;
     text-transform: uppercase; }
+    @media only screen and (max-width: 56.25em) {
+      .headline--large {
+        font-size: 4.5rem; } }
 
 .secret {
   background-color: #fff; }
@@ -99,10 +121,16 @@ ul {
     margin: 0 15rem;
     padding: 4rem 0;
     font-size: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .secret__headline {
+        margin: 0 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .secret__headline {
+        margin: 0 7rem; } }
   .secret__banner {
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #c39b7c, rgba(255, 255, 255, 0));
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, auto));
+    grid-template-columns: repeat(auto-fit, minmax(33rem, auto));
     justify-content: center;
     grid-column-gap: 2rem; }
     .secret__banner__item--text {
@@ -113,6 +141,12 @@ ul {
   .secret__description {
     padding: 4rem 0;
     margin: 0 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .secret__description {
+        margin: 0 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .secret__description {
+        margin: 0 7rem; } }
     .secret__description__text {
       margin: 4rem 0;
       font-size: 2rem; }
@@ -132,16 +166,36 @@ ul {
   background-size: cover;
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  background-repeat: no-repeat; }
+  @media only screen and (max-width: 56.25em) {
+    .parallax {
+      min-height: 200px; } }
   .parallax__heading {
     color: #fff;
     font-size: 5rem;
     padding-left: 5rem;
     padding-right: 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .parallax__heading {
+        font-size: 3rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .parallax__heading {
+        font-size: 2.5rem;
+        padding-right: 10rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .parallax__heading {
+        padding-right: 5rem; } }
   .parallax__sub {
     color: #fff;
     font-size: 2.5rem;
     padding-left: 5rem; }
+    @media only screen and (max-width: 56.25em) {
+      .parallax__sub {
+        font-size: 2rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .parallax__sub {
+        font-size: 1.5rem; } }
 
 .doctor {
   padding-top: 3rem;
@@ -151,10 +205,16 @@ ul {
     align-items: center;
     background-color: #3d1c0f;
     width: 80%; }
+    @media only screen and (max-width: 56.25em) {
+      .doctor__banner {
+        width: 100%; } }
     .doctor__banner__text {
       color: #fff;
       font-size: 2rem;
       padding: 3rem 1rem 3rem 45%; }
+      @media only screen and (max-width: 56.25em) {
+        .doctor__banner__text {
+          font-size: 1.5rem; } }
     .doctor__banner__image {
       height: 30rem;
       width: 30rem;
@@ -162,9 +222,22 @@ ul {
       float: left;
       transform: translateY(-3rem);
       margin-left: 2rem; }
+      @media only screen and (max-width: 56.25em) {
+        .doctor__banner__image {
+          height: 23rem;
+          width: 23rem;
+          transform: translateY(-1.1rem); } }
+      @media only screen and (max-width: 31.25em) {
+        .doctor__banner__image {
+          height: 20rem;
+          width: 20rem;
+          transform: translateY(1rem); } }
   .doctor__texts {
     margin: 0 10rem;
     padding-bottom: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .doctor__texts {
+        margin: 0 7rem; } }
     .doctor__texts__text {
       margin: 4rem 0;
       font-size: 2rem; }
@@ -179,11 +252,23 @@ ul {
   .gear__header {
     font-size: 4rem;
     color: #FFCD2F; }
+    @media only screen and (max-width: 56.25em) {
+      .gear__header {
+        font-size: 3rem; } }
   .gear__texts {
     margin: 0 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .gear__texts {
+        margin: 0 10rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .gear__texts {
+        margin: 0 7rem; } }
   .gear__text {
     font-size: 2rem;
     color: #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .gear__text {
+        font-size: 1.5rem; } }
     .gear__text:not(:last-child) {
       margin-bottom: 2rem; }
 
@@ -193,6 +278,15 @@ ul {
     margin: 0 15rem;
     background-color: #fff;
     padding-bottom: 2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .guarantee__contents {
+        margin: 0 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .guarantee__contents {
+        margin: 0 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .guarantee__contents {
+        margin: 0 2rem; } }
     .guarantee__contents__header {
       font-size: 4rem;
       font-weight: 700; }
@@ -200,8 +294,16 @@ ul {
       font-size: 2rem; }
       .guarantee__contents p:not(:last-child) {
         margin: 2rem 0; }
+  .guarantee__image--primary {
+    width: 100%; }
   .guarantee__image--sub {
     float: right; }
+    @media only screen and (max-width: 56.25em) {
+      .guarantee__image--sub {
+        width: 60%; } }
+    @media only screen and (max-width: 37.5em) {
+      .guarantee__image--sub {
+        width: 100%; } }
 
 .guarantee2 {
   background-image: url("/images/TransparentArrowBkgd.jpg");
@@ -210,7 +312,6 @@ ul {
   .guarantee2::before {
     content: "";
     display: block;
-    position: relative;
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0, #fff 100%);
     margin-bottom: -150px;
     height: 150px;
@@ -231,10 +332,28 @@ ul {
     margin: 2rem 25rem;
     font-size: 1.5rem;
     color: #fff; }
+    @media only screen and (max-width: 56.25em) {
+      .guarantee2__copyright {
+        margin: 2rem 10rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .guarantee2__copyright {
+        margin: 2rem 7rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .guarantee2__copyright {
+        margin: 2rem 5rem; } }
   .guarantee2__contents {
     background-color: rgba(255, 255, 255, 0.9);
     margin: 0 15rem;
     z-index: 10; }
+    @media only screen and (max-width: 56.25em) {
+      .guarantee2__contents {
+        margin: 0 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .guarantee2__contents {
+        margin: 0 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .guarantee2__contents {
+        margin: 0 2rem; } }
     .guarantee2__contents p {
       font-size: 2rem; }
       .guarantee2__contents p:not(:last-child) {
@@ -245,18 +364,42 @@ ul {
     background-color: #495E40;
     text-align: center;
     margin: 0 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .guarantee2__banner {
+        margin: 0 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .guarantee2__banner {
+        margin: 0 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .guarantee2__banner {
+        margin: 0 2rem; } }
     .guarantee2__banner h1 {
       color: #F9D63F;
       font-size: 13rem; }
+      @media only screen and (max-width: 56.25em) {
+        .guarantee2__banner h1 {
+          font-size: 10rem; } }
     .guarantee2__banner h2 {
       color: #fff;
       text-transform: uppercase;
       font-size: 6rem; }
+      @media only screen and (max-width: 56.25em) {
+        .guarantee2__banner h2 {
+          font-size: 4rem; } }
     .guarantee2__banner h3 {
       color: #fff;
       text-transform: uppercase;
       font-size: 2.2rem; }
   .guarantee2__arrow {
     margin: 0 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .guarantee2__arrow {
+        margin: 0 7rem; } }
+    @media only screen and (max-width: 37.5em) {
+      .guarantee2__arrow {
+        margin: 0 5rem; } }
+    @media only screen and (max-width: 31.25em) {
+      .guarantee2__arrow {
+        margin: 0 2rem; } }
     .guarantee2__arrow img {
       width: 100%; }
