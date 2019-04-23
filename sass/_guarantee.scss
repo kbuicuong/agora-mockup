@@ -155,7 +155,6 @@
         text-align: center;
         margin: 0 13rem;
         display: grid;
-        //grid-template-columns: 13rem 13rem minmax(20rem,1fr) 13rem 13rem;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 1rem;
         align-items: center;
@@ -189,6 +188,10 @@
             h1{
                 color: #F9D63F;
                 font-size: 11rem;
+
+                @media only screen and (min-width: $bp-gigantic){
+                    font-size: 15rem;
+                }
     
                 @media only screen and (max-width: $bp-medium){
                     font-size: 7.5rem;
@@ -203,6 +206,10 @@
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 5rem;
+
+                @media only screen and (min-width: $bp-gigantic){
+                    font-size: 6rem;
+                }
     
                 @media only screen and (max-width: $bp-medium){
                     font-size: 3.5rem;
@@ -218,6 +225,10 @@
                 color: #fff;
                 text-transform: uppercase;
                 font-size: 2.2rem;
+
+                @media only screen and (min-width: $bp-gigantic){
+                    font-size: 3rem;
+                }
 
                 @media only screen and (max-width: $bp-medium){
                     font-size: 1.8rem;
