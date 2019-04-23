@@ -1,0 +1,44 @@
+@keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem); 
+    }
+
+    80% {
+        transform: translateX(-1rem); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem); 
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+/* Animation, what happens at each percentage*/
+@keyframes moveInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem); /* Start negative in the X direction */
+    }
+
+    80% {
+        transform: translateX(1rem); /* Move a bit more to the right before popping back */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0); /* Look exactly like it looks right now */
+    }
+}

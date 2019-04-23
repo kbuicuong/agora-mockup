@@ -12,6 +12,7 @@
         border: 5px solid #fff;
         font-weight: 700;
         line-height: .5;
+        transition: all .2s;
 
         @media only screen and (max-width: $bp-small){
             font-size: 4rem;
@@ -21,5 +22,19 @@
             font-size: 3.5rem;
         }
 
+    }
+
+    &:hover{
+        background-color:#F9D63F;
+        color: #E47E25;
+        transform: translateY(-1rem); 
+        box-shadow: 0 1rem 2rem rgba(#000, .2); 
+
+    }
+
+    &--animated{
+        animation: moveInBottom .5s ease-out .75s; 
+        -webkit-animation-fill-mode: backwards; 
+        animation-fill-mode: backwards; 
     }
 }

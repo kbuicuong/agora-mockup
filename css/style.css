@@ -72,7 +72,8 @@ ul {
   font-size: 5rem;
   border: 5px solid #fff;
   font-weight: 700;
-  line-height: .5; }
+  line-height: .5;
+  transition: all .2s; }
   @media only screen and (max-width: 37.5em) {
     .btn, .btn:link, .btn:visited {
       font-size: 4rem; } }
@@ -80,8 +81,51 @@ ul {
     .btn, .btn:link, .btn:visited {
       font-size: 3.5rem; } }
 
+.btn:hover {
+  background-color: #F9D63F;
+  color: #E47E25;
+  transform: translateY(-1rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards; }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem); }
+  80% {
+    transform: translateX(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
+/* Animation, what happens at each percentage*/
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+    /* Start negative in the X direction */ }
+  80% {
+    transform: translateX(1rem);
+    /* Move a bit more to the right before popping back */ }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+    /* Look exactly like it looks right now */ } }
+
 .headline {
-  background-image: url("/images/HeadlineImage_1.jpg");
+  background-image: url("../images/HeadlineImage_1.jpg");
   height: 45rem;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -161,13 +205,15 @@ ul {
           margin-left: 1rem; }
 
 .parallax {
-  background-image: url("/images/ParallaxOne_5.jpg");
+  background-image: url("../images/ParallaxOne_5.jpg");
   min-height: 300px;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top right; }
   @media only screen and (max-width: 56.25em) {
     .parallax {
       min-height: 200px; } }
@@ -245,7 +291,7 @@ ul {
 .gear {
   background-color: #A41F25;
   padding-bottom: 4rem;
-  background-image: url("/images/Gears_15.jpg");
+  background-image: url("../images/Gears_15.jpg");
   background-position: right;
   background-size: 80%;
   background-repeat: no-repeat; }
@@ -275,7 +321,7 @@ ul {
 .guarantee {
   background-color: #fff; }
   .guarantee__contents {
-    margin: 0 15rem;
+    margin: 0 13rem;
     background-color: #fff;
     padding-bottom: 2rem; }
     @media only screen and (max-width: 56.25em) {
@@ -289,11 +335,13 @@ ul {
         margin: 0 2rem; } }
     .guarantee__contents__header {
       font-size: 4rem;
-      font-weight: 700; }
+      font-weight: 700;
+      margin: 0 2rem; }
     .guarantee__contents p {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin: 0 2rem; }
       .guarantee__contents p:not(:last-child) {
-        margin: 2rem 0; }
+        margin: 2rem 2rem; }
   .guarantee__image--primary {
     width: 100%; }
   .guarantee__image--sub {
@@ -306,7 +354,7 @@ ul {
         width: 100%; } }
 
 .guarantee2 {
-  background-image: url("/images/TransparentArrowBkgd.jpg");
+  background-image: url("../images/TransparentArrowBkgd.jpg");
   background-position: center center;
   background-size: cover; }
   .guarantee2::before {
@@ -343,7 +391,7 @@ ul {
         margin: 2rem 5rem; } }
   .guarantee2__contents {
     background-color: rgba(255, 255, 255, 0.9);
-    margin: 0 15rem;
+    margin: 0 13rem;
     z-index: 10; }
     @media only screen and (max-width: 56.25em) {
       .guarantee2__contents {
@@ -355,7 +403,9 @@ ul {
       .guarantee2__contents {
         margin: 0 2rem; } }
     .guarantee2__contents p {
-      font-size: 2rem; }
+      font-size: 2rem;
+      margin-left: 2rem;
+      margin-right: 2rem; }
       .guarantee2__contents p:not(:last-child) {
         margin-bottom: 2rem; }
       .guarantee2__contents p:last-child {
@@ -363,7 +413,7 @@ ul {
   .guarantee2__banner {
     background-color: #495E40;
     text-align: center;
-    margin: 0 15rem; }
+    margin: 0 13rem; }
     @media only screen and (max-width: 56.25em) {
       .guarantee2__banner {
         margin: 0 7rem; } }

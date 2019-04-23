@@ -2,7 +2,7 @@
     background-color: #fff;
 
     &__contents{
-        margin: 0 15rem;
+        margin: 0 13rem;
         background-color: #fff;
         padding-bottom: 2rem;
 
@@ -21,14 +21,16 @@
         &__header{
             font-size: 4rem;
             font-weight: 700;
+            margin: 0 2rem;
             
         }
 
         p{
             font-size: 2rem;
+            margin: 0 2rem;
 
             &:not(:last-child){
-                margin: 2rem 0;
+                margin: 2rem 2rem;
             }
         }
 
@@ -57,7 +59,7 @@
 }
 
 .guarantee2{
-    background-image: url("/images/TransparentArrowBkgd.jpg");
+    background-image: url("../images/TransparentArrowBkgd.jpg");
     background-position: center center;
     background-size: cover;
 
@@ -114,7 +116,7 @@
 
     &__contents{
         background-color: rgba(255, 255, 255, .9);
-        margin: 0 15rem;
+        margin: 0 13rem;
         z-index: 10;
 
         @media only screen and (max-width: $bp-medium){
@@ -131,7 +133,8 @@
 
         p{
             font-size: 2rem;
-            //margin: 2rem 0;
+            margin-left: 2rem;
+            margin-right: 2rem;
 
             &:not(:last-child){
                 margin-bottom: 2rem;
@@ -146,7 +149,7 @@
     &__banner{
         background-color: #495E40;
         text-align: center;
-        margin: 0 15rem;
+        margin: 0 13rem;
 
         @media only screen and (max-width: $bp-medium){
             margin: 0 7rem;
