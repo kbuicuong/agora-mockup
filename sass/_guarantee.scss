@@ -154,6 +154,11 @@
         background-color: #495E40;
         text-align: center;
         margin: 0 13rem;
+        display: grid;
+        //grid-template-columns: 13rem 13rem minmax(20rem,1fr) 13rem 13rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
 
         @media only screen and (max-width: $bp-medium){
             margin: 0 7rem;
@@ -167,30 +172,59 @@
             margin: 0 2rem;
         }
 
-        h1{
-            color: #F9D63F;
-            font-size: 13rem;
+        &__image{
 
-            @media only screen and (max-width: $bp-medium){
-                font-size: 10rem;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+
             }
         }
 
-        h2{
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 6rem;
+        &__text{
+            grid-column: 3 / span 2;
 
-            @media only screen and (max-width: $bp-medium){
-                font-size: 4rem;
+            h1{
+                color: #F9D63F;
+                font-size: 11rem;
+    
+                @media only screen and (max-width: $bp-medium){
+                    font-size: 7.5rem;
+                }
+
+                @media only screen and (max-width: $bp-inbetween){
+                    font-size: 6.5rem;
+                }
+            }
+    
+            h2{
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 5rem;
+    
+                @media only screen and (max-width: $bp-medium){
+                    font-size: 3.5rem;
+                }
+
+                @media only screen and (max-width: $bp-inbetween){
+                    font-size: 3.3rem;
+                }
+
+            }
+    
+            h3{
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 2.2rem;
+
+                @media only screen and (max-width: $bp-medium){
+                    font-size: 1.8rem;
+                }
             }
         }
-
-        h3{
-            color: #fff;
-            text-transform: uppercase;
-            font-size: 2.2rem;
-        }
+        
     }
 
     &__arrow{
