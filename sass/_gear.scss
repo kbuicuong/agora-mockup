@@ -1,0 +1,25 @@
+.gear{
+    background-color: #A41F25;
+    padding-bottom: 4rem;
+    background-image: url("/images/Gears_15.jpg");
+    background-position: right;
+    background-size: 80%;
+    background-repeat: no-repeat;
+
+    &__header{
+        font-size: 4rem;
+        color: #FFCD2F;
+    }
+
+    &__texts{
+        margin: 0 15rem;
+    }
+
+    &__text{
+        font-size: 2rem;
+        color: #fff;
+        &:not(:last-child){
+            margin-bottom: 2rem;
+        }
+    }
+}

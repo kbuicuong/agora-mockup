@@ -1,0 +1,20 @@
+.btn{
+    &,
+    &:link,
+    &:visited{
+        background-color: #E47E25;
+        text-decoration: none;
+        padding: 1.5rem 10rem; 
+        display: inline-block; 
+        position: relative; 
+        color: #fff;
+        font-size: 5rem;
+        border: 5px solid #fff;
+        font-weight: 700;
+        line-height: .5;
+
+        //Change for the <button> element
+        cursor: pointer;
+
+    }
+}
